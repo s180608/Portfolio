@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VARA CHAITANYA CHADALAVADA</title>
+    <link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="./name.png" class="logo">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Frontend Developer</p>
+                <h1>Hi, I'm <span>VARA CHAITANYA CHADALAVADA</span> <br> From India</h1>
+            </div>
+        </div>
+    </div>
+    <!-- -------------------about------------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./pic.jpeg" alt="" width="600px" height="550px">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p style="margin-top: 10px">Hey, I'm Chaitanya, B.tech student in the stream of Computer Science.
+                         I'm a person having a prior knowledge on Reactjs frontend Development and little bit knowledge on Backend Languages. I'm a quick learner and I'll open my mind to learn new technologies.
+                         I'm a fresher and looking for immediate joining in a good company</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('technologies')">Technologies Owned</p>
+                        <p class="tab-links" onclick="opentab('Hobbies-Interests')">Hobbies & Interests</p> 
+                    </div> 
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Frontend Web Development</span><br>Reactjs</li>
+                            <li><span>Problem Solving Techniques</span><br>Python & C</li>
+                            <li><span>Backend Development</span><br>Nodejs</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>B.tech at RGUKT,Srikakulam</span><br>-Computer Science<br>2020-Present</li>
+                            <li><span>PUC at RGUKT,Srikakulam</span><br>2018-2020</li>
+                            <li><span>Secondary Education at ZPP High School, Kanukollu</span><br>2014-2018</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="technologies">
+                        <ul>
+                            <li><span>Programming Languages</span><br>Python<br>C<br>Nodejs<br></li>
+                            <li><span>Web Technologies</span><br>HTML<br>CSS<br>JavaScript<br>Mongodb<br>SQl</li>
+                            
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Hobbies-Interests">
+                        <ul>
+                            <li><span>Hobbies</span><br>Watching Movies<br>Listening Songs<br></li>
+                            <li><span>Interests</span><br>Travelling</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="projects">
+
+    </div>
+
+    <div class="contact" id="contact">
+        <h1>Contact </h1>
+        <a href="https://www.instagram.com/official_guy_bunny/"><img src="./instagram.png" alt="insta"></a>
+        <a href="https://www.linkedin.com/in/varachaitanya-chadalavada/"><img src="./linkedin.png" alt="linkedin"></a>
+        <a href="https://github.com/s180608/"><img src="./github.png" alt="git"></a>
+        <a href="mailto:s180608@rguktsklm.ac.in"><img src="./gmail.png" alt="gmail"></a>
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName('tab-contents');
+        function opentab(tabname) {
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link")
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add('active-link')
+            document.getElementById(tabname).classList.add('active-tab')
+        }
+    </script>
+</body>
+</html>
