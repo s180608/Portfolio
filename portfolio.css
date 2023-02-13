@@ -173,9 +173,7 @@ nav ul li a:hover::after {
     margin-bottom: 50px;
     height: 220px;
     text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    position: relative;
 
   }
 
@@ -188,38 +186,7 @@ nav ul li a:hover::after {
     padding: 45px;
   }
 
-  @media only screen and (max-width: 600px){
-    .header-text{
-      margin-top: 100%;
-      font-size: 16px;
-
-    }
-    .header-text h1{
-      font-size: 30px;
-    }
-    nav .fa{
-      display: block;
-      font-size: 25px;
-    }
-    nav ul{
-      background-color: #000000;
-      position: fixed;
-      top: 0;
-      right: 0;
-      width: 200px;
-      height: 100vh;
-      padding-top: 50px;
-    }
-
-    nav ul li{
-      display: block;
-      margin: 25px;
-    }
-    nav ul .fa{
-      position: absolute;
-      top: 25px;
-      left: 25px;
-    }
+  @media only screen and (max-width: 800px){
 
     .sub-title{
       font: 40px;
@@ -236,5 +203,10 @@ nav ul li a:hover::after {
     .tab-links{
       font-size: 16px;
       margin-right: 20px;
+    }
+    .box{
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
   }
