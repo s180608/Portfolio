@@ -1,108 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>VARA CHAITANYA CHADALAVADA</title>
-    <link rel="stylesheet" href="portfolio.css">
-</head>
-<body>
+    <link rel="stylesheet" href="portfolio.css" />
+  </head>
+  <body>
     <div id="header">
-        <div class="container">
-            <nav>
-                <img src="./name.png" class="logo">
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-            <div class="header-text" id="home">
-                <p>Frontend Developer</p>
-                <h1>Hi, I'm <span>VARA CHAITANYA CHADALAVADA</span> <br> From India</h1>
-            </div>
+      <div class="container">
+        <nav>
+          <img src="./name.png" class="logo" />
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
+        </nav>
+        <div class="header-text" id="home">
+          <p>Frontend Developer</p>
+          <h1>
+            Hi, I'm <span>VARA CHAITANYA CHADALAVADA</span> <br />
+            UI/UX Designer
+          </h1>
         </div>
+      </div>
     </div>
     <!-- -------------------about------------------- -->
     <div id="about">
-        <div class="container">
-            <div class="row">
-                <div class="about-col-1">
-                    <img src="./pic.jpeg" alt="" width="600px" height="550px">
-                </div>
-                <div class="about-col-2">
-                    <h1 class="sub-title">About me</h1>
-                    <p style="margin-top: 10px">Hey, I'm Chaitanya, B.tech student in the stream of Computer Science.
-                         I'm a person having a prior knowledge on Reactjs frontend Development and little bit knowledge on Backend Languages. I'm a quick learner and I'll open my mind to learn new technologies.
-                         I'm a fresher and looking for immediate joining in a good company</p>
-                    <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                        <p class="tab-links" onclick="opentab('education')">Education</p>
-                        <p class="tab-links" onclick="opentab('technologies')">Technologies Owned</p>
-                        <p class="tab-links" onclick="opentab('Hobbies-Interests')">Hobbies & Interests</p> 
-                    </div> 
-                    <div class="tab-contents active-tab" id="skills">
-                        <ul>
-                            <li><span>Frontend Web Development</span><br>Reactjs</li>
-                            <li><span>Problem Solving Techniques</span><br>Python & C</li>
-                            <li><span>Backend Development</span><br>Nodejs</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="education">
-                        <ul>
-                            <li><span>B.tech at RGUKT,Srikakulam</span><br>-Computer Science<br>2020-Present</li>
-                            <li><span>PUC at RGUKT,Srikakulam</span><br>2018-2020</li>
-                            <li><span>Secondary Education at ZPP High School, Kanukollu</span><br>2014-2018</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="technologies">
-                        <ul>
-                            <li><span>Programming Languages</span><br>Python<br>C<br>Nodejs<br></li>
-                            <li><span>Web Technologies</span><br>HTML<br>CSS<br>JavaScript<br>Mongodb<br>SQl</li>
-                            
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="Hobbies-Interests">
-                        <ul>
-                            <li><span>Hobbies</span><br>Watching Movies<br>Listening Songs<br></li>
-                            <li><span>Interests</span><br>Travelling</li>
-                        </ul>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="./dp.jpeg" alt="" width="600px" height="550px" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About me</h1>
+            <p style="margin-top: 10px">
+              Hello, I'm Vara Chaitanya, a final year B.Tech student with a passion for creating user-friendly designs and bringing them to life through front-end development. With a keen eye for detail and a commitment to crafting seamless user experiences, I've honed my skills in design principles and coding languages to create visually appealing and functional interfaces. As a dedicated learner and aspiring front-end developer, I'm excited to showcase my projects and journey in the world of web development on this portfolio website.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+              <p class="tab-links" onclick="opentab('technologies')">
+                Technologies Owned
+              </p>
+              <p class="tab-links" onclick="opentab('Hobbies-Interests')">
+                Hobbies & Interests
+              </p>
             </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>Frontend Web Development</span><br />Html,Css,React Js</li>
+                <li><span>Problem Solving Techniques</span><br />Python & C</li>
+                <li><span>UI Designing</span><br />UI/UX,Figma</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>B.tech at RGUKT,Srikakulam</span><br />-Computer
+                  Science<br />2020-Present
+                </li>
+                <li><span>PUC at RGUKT,Srikakulam</span><br />2018-2020</li>
+                <li>
+                  <span>Secondary Education at ZPP High School, Kanukollu</span
+                  ><br />2014-2018
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="technologies">
+              <ul>
+                <li>
+                  <span>Programming Languages</span
+                  ><br />Python<br />C<br />SQL<br />
+                </li>
+                <li>
+                  <span>Web Technologies</span
+                  ><br />HTML<br />CSS<br />JavaScript<br />Bootstrap<br />UI/UX
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="Hobbies-Interests">
+              <ul>
+                <li>
+                  <span>Hobbies</span><br />Reading Books<br />Listening
+                  Songs<br />
+                </li>
+                <li><span>Interests</span><br />Playing Batminton <br/> Browsing New technologies</li>
+              </ul>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
     <div class="projects" id="projects">
-        <h1> Projects </h1>
-        <div class="box" onclick="window.open('https://foodordering.onrender.com/', '_blank')">
-            <h3>Online Food Ordering Sysem</h3>
-        </div>
-        <div class="box" id="monster" onclick="window.open('https://github.com/s180608/Monsters-rolodex', '_blank')">
-            <h3>Monsters - Rolodex</h3>
-        </div>
+      <h1>Projects</h1>
+      <div
+      class="box"
+      id="wfms"
+      onclick="window.open('https://wfms.onrender.com/Home_Page.html', '_blank')"
+      >
+        <h3>Waste Food Management System</h3>
+        <br />
+        <small
+        >This is a web application created for non-governmental
+        organizations, to gather additional or excess food from weddings and
+        NGO's serve that food to the poor</small
+        ><br>
+      </div>
+      <div
+        class="box"
+        onclick="window.open('https://foodordering.onrender.com/', '_blank')"
+      >
+        <h3>Online Food Ordering Sysem</h3>
+        <br /><br />
+        <small
+          >This project is a clone of ordering systems like Zomato and
+          Swiggy. Which provides and interface to order food from
+          home only</small
+        >
+      </div>
+      <div
+        class="box"
+        id="monster"
+        onclick="window.open('https://github.com/s180608/Monsters-rolodex', '_blank')"
+      >
+        <h3>Monsters - Rolodex</h3>
+        <br />
+        <small
+          >This project is a basic project done while learning React Js.This
+          project contains list of monsters and a search option based on search
+          the monsters get filtered.</small
+        >
+      </div>
     </div>
     <div class="contact" id="contact">
-        <h1>Contact </h1>
-        <a href="mailto:s180608@rguktsklm.ac.in" target="_blank"><img src="./gmail.png" alt="gmail"></a>
-        <a href="https://www.linkedin.com/in/varachaitanya-chadalavada/" target="_blank"><img src="./linkedin.png" alt="linkedin"></a>
-        <a href="https://github.com/s180608/" target="_blank"><img src="./github.png" alt="git"></a>
-        <a href="https://www.instagram.com/official_guy_bunny/" target="_blank"><img src="./instagram.png" alt="insta"></a>
+      <h1>Contact</h1>
+      <a href="mailto:s180608@rguktsklm.ac.in" target="_blank"
+        ><img src="./gmail.png" alt="gmail"
+      /></a>
+      <a
+        href="https://www.linkedin.com/in/varachaitanya-chadalavada/"
+        target="_blank"
+        ><img src="./linkedin.png" alt="linkedin"
+      /></a>
+      <a href="https://github.com/s180608/" target="_blank"
+        ><img src="./github.png" alt="git"
+      /></a>
+      <a href="https://www.instagram.com/official_guy_bunny/" target="_blank"
+        ><img src="./instagram.png" alt="insta"
+      /></a>
     </div>
     <script>
-        var tablinks = document.getElementsByClassName("tab-links");
-        var tabcontents = document.getElementsByClassName('tab-contents');
-        function opentab(tabname) {
-            for(tablink of tablinks){
-                tablink.classList.remove("active-link")
-            }
-            for(tabcontent of tabcontents){
-                tabcontent.classList.remove("active-tab")
-            }
-            event.currentTarget.classList.add('active-link')
-            document.getElementById(tabname).classList.add('active-tab')
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
         }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+
+      function toggleMenu() {
+    var navLinks = document.querySelector("nav ul");
+    navLinks.classList.toggle("active");
+  }
     </script>
-</body>
+  </body>
 </html>
